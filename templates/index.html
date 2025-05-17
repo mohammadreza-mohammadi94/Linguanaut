@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaTools - Translation & Summarization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="LinguaTools Logo">
+                    <h1>LinguaTools</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Language Processing Tools</h2>
+                <p>Powerful translation and summarization at your fingertips</p>
+            </section>
+
+            <section class="tools">
+                <div class="input-section">
+                    <h3>Input Text</h3>
+                    <textarea id="input-text" placeholder="Enter your English text here..."></textarea>
+                    <div class="button-group">
+                        <button id="translate-btn" class="btn primary">Translate to Dutch</button>
+                        <button id="summarize-btn" class="btn secondary">Summarize</button>
+                        <button id="clear-btn" class="btn outline">Clear All</button>
+                    </div>
+                    <div class="loader" id="loader">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+
+                <div class="output-section">
+                    <div class="output-card">
+                        <h3>Dutch Translation</h3>
+                        <div id="translation-output" class="output-box"></div>
+                    </div>
+                    <div class="output-card">
+                        <h3>English Summary</h3>
+                        <div id="summary-output" class="output-box"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 LinguaTools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
