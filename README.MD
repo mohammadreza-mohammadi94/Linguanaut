@@ -1,68 +1,26 @@
-# 🌍 Text Translator & Summarizer
+# 📘 LinguaLite
 
-A simple web app built with Flask that provides two main features:
-
-* ✏️ **Text Summarization**
-* 🌐 **Text Translation (English to Dutch)**
-
----
+A simple yet powerful Flask-based web app that lets users translate English text to Dutch and generate summaries using advanced NLP models like BART and MarianMT. Ideal for language processing, quick summaries, and seamless text transformation.
 
 ## 🚀 Features
 
-* **Summarize** long English texts using BART (facebook/bart-large-cnn)
-* **Translate** English texts into Dutch using MarianMT (Helsinki-NLP/opus-mt-en-nl)
-* Easy-to-use web interface (HTML + Flask backend)
-* REST API endpoints for integration
+* 🌍 Translate English to Dutch
+* 📝 Summarize long texts using BART
+* 🔁 API-based design with clean endpoints
+* 🌐 Simple and responsive web interface
 
----
+## 🖼️ Screenshot
 
-## 📁 Project Structure
+<a href="https://ibb.co/Vc7Sv9L5"><img src="https://i.ibb.co/DHxC7W1T/Screenshot-2025-05-17-192325.png" alt="Screenshot-2025-05-17-192325" border="0"></a>
 
-```
-.
-├── app.py                  # Flask application
-├── templates/
-│   └── index.html          # Web interface
-├── models/
-│   ├── summarizer.py       # Summarization logic
-│   └── translator.py       # Translation logic
-```
+## 🛠️ How to Run
 
----
+1. Clone the repository
+2. Install dependencies
+3. Run `app.py`
+4. Open `http://127.0.0.1:5000` in your browser
 
-## 🛠 Requirements
+## 🧠 Models Used
 
-* Python 3.7+
-* Flask
-* Transformers (HuggingFace)
-* Torch
-
-Install dependencies with:
-
-```bash
-pip install flask transformers torch
-```
-
----
-
-## 💡 Usage
-
-Start the app with:
-
-```bash
-python app.py
-```
-
-Then visit `http://localhost:5000` in your browser.
-
----
-
-## 🧠 API Endpoints
-
-* `POST /api/summarize`
-  **Input:** `{ "text": "Your long text" }`
-  **Output:** `{ "summary": "..." }`
-
-* `POST /api/translate`
-  **Input:** `{ "text": "Hello world" }`
-  **Output:** `{ "translation": "Hallo wereld" }`
+* **Translation:** Helsinki-NLP MarianMT (English → Dutch)
+* **Summarization:** Facebook BART Large CNN
