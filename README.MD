@@ -11,8 +11,7 @@ A simple yet powerful Flask-based web app that lets users translate English text
 
 ## 🖼️ Screenshot
 
-<a href="https://ibb.co/Vc7Sv9L5"><img src="https://i.ibb.co/DHxC7W1T/Screenshot-2025-05-17-192325.png" alt="Screenshot-2025-05-17-192325" border="0"></a>
-
+<a href="https://ibb.co/Vc7Sv9L5"><img src="https://i.ibb.co/DHxC7W1T/Screenshot-2025-05-17-192325.png" alt="Screenshot-2025-05-17-192325" border="0" /></a>
 ## 🛠️ How to Run
 
 1. Clone the repository
